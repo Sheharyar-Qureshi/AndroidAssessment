@@ -23,7 +23,7 @@ class HomeFragment : AndroidAssessmentBaseFragment<FragmentHomeBinding>() {
         binding.userNameEditText.addTextChangedListener(object : TextWatcher {
             override fun onTextChanged(s: CharSequence?, start: Int, before: Int, count: Int) {
                 binding.validationText.visibility = View.GONE
-                binding.guessAgeButton.isEnabled = viewModel.isValidLength(s.toString())
+                binding.guessAgeButton.isEnabled = viewModel.isValidLength(s.toString().trim(' '))
             }
 
             override fun beforeTextChanged(s: CharSequence?, start: Int, count: Int, after: Int) {}
@@ -32,7 +32,7 @@ class HomeFragment : AndroidAssessmentBaseFragment<FragmentHomeBinding>() {
 
         binding.guessAgeButton.setOnClickListener {
             binding.userNameEditText.text.toString().let { name ->
-                handleValidations(name)
+                handleValidations(name.trim(' '))
             }
         }
     }

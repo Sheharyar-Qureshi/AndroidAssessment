@@ -11,7 +11,7 @@ class HomeViewModel : AndroidAssessmentBaseViewModel() {
     fun validateName(name: String?): String? {
         return when {
             name.isNullOrEmpty() -> "We need your First Name"
-            name.matches(Regex(Constants.USERNAME_REGEX)) -> null
+            name.matches(Constants.USERNAME_REGEX) -> null
             else -> "What kind of first name is that?"
         }
     }
