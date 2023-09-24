@@ -3,42 +3,43 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools">
 
-        <androidx.constraintlayout.widget.ConstraintLayout
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+        <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="50dp">
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="10dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
 
-            <LinearLayout
-                android:layout_width="match_parent"
+            <TextView
+                android:id="@+id/nameText"
+                android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:orientation="horizontal"
-                android:padding="10dp"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintEnd_toEndOf="parent">
+                android:layout_weight="7"
+                android:ellipsize="end"
+                android:fontFamily="@font/averia_sans_libre"
+                android:gravity="start"
+                android:textColor="@color/textColor"
+                android:textSize="17sp"
+                tools:text="Sheharyar" />
 
-                <TextView
-                    android:id="@+id/nameText"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="7"
-                    android:ellipsize="end"
-                    android:fontFamily="@font/averia_sans_libre"
-                    android:gravity="start"
-                    android:textSize="17sp"
-                    tools:text="Sheharyar" />
-
-                <TextView
-                    android:id="@+id/ageText"
-                    android:layout_width="20dp"
-                    android:layout_height="30dp"
-                    android:layout_weight="1"
-                    android:ellipsize="end"
-                    android:fontFamily="@font/baloo_tamma"
-                    android:gravity="center"
-                    android:textColor="@color/splashScreenBlue"
-                    android:textSize="17sp"
-                    tools:text="25" />
-            </LinearLayout>
-        </androidx.constraintlayout.widget.ConstraintLayout>
+            <TextView
+                android:id="@+id/ageText"
+                android:layout_width="20dp"
+                android:layout_height="30dp"
+                android:layout_weight="1"
+                android:ellipsize="end"
+                android:fontFamily="@font/baloo_tamma"
+                android:gravity="center"
+                android:textColor="@color/splashScreenBlue"
+                android:textSize="17sp"
+                tools:text="25" />
+        </LinearLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
 </layout>

@@ -1,6 +1,5 @@
 package com.example.androidassessmenttask.ui.home.views
 
-import android.widget.Toast
 import androidx.lifecycle.Lifecycle
 import androidx.lifecycle.lifecycleScope
 import androidx.lifecycle.repeatOnLifecycle
@@ -43,16 +42,12 @@ class ResultFragment : AndroidAssessmentBaseFragment<FragmentResultBinding>() {
                         }
 
                         is Resource.Failure -> {
-                            Toast.makeText(activity, result.throwable.message, Toast.LENGTH_SHORT)
-                                .show()
                             binding.resultText = resources.getString(
                                 R.string.whoops_having_trouble,
                             )
                         }
 
                         is Resource.Success -> {
-                            Toast.makeText(activity, result.data.age.toString(), Toast.LENGTH_SHORT)
-                                .show()
                             binding.resultText = resources.getString(
                                 R.string.your_age_is,
                                 result.data.name,

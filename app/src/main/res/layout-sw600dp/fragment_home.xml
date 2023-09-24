@@ -29,7 +29,7 @@
             android:autoSizeTextType="uniform"
             android:fontFamily="@font/bad_script"
             android:text="@string/lets_guess_your_age"
-            android:textColor="@color/black"
+            android:textColor="@color/textColor"
             android:textSize="28sp"
             app:layout_constraintEnd_toEndOf="@id/endGuideLine"
             app:layout_constraintStart_toStartOf="@id/startGuideLine"
@@ -55,13 +55,13 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content">
 
-                    <androidx.appcompat.widget.AppCompatEditText
+                    <com.google.android.material.textfield.TextInputEditText
                         android:id="@+id/userNameEditText"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_marginHorizontal="20dp"
                         android:layout_marginTop="20dp"
-                        android:background="@color/white"
+                        android:background="@color/transparent"
                         android:ellipsize="end"
                         android:fontFamily="monospace"
                         android:hint="@string/please_enter_your_first_name"
