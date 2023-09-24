@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Age Predictor</string>
+    <string name="home">Home</string>
+    <string name="result">Result</string>
+    <string name="history">History</string>
+    <string name="lets_guess_your_age">Let\'s guess your Age</string>
+    <string name="please_enter_your_first_name">Please enter your first name</string>
+    <string name="surprise_me">Surprise Me</string>
+    <string name="age_predictor">Age Predictor</string>
+    <string name="guessing_your_age">Guessing your age…</string>
+    <string name="whoops_having_trouble">Whoops…Having Trouble.\nPlease come back later…</string>
+    <string name="your_age_is">Hey %s!\nyour age is\n%d</string>
+    <string name="back_arrow">backArrow</string>
+    <string name="no_records_to_show">No Records To Show</string>
+    <string name="fetching_history">Fetching History</string>
+</resources>
